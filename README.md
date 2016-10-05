@@ -180,7 +180,7 @@ mkdir /Users/darlanmendonca/Desktop/test
 mkdir -p /Users/darlanmendonca/Desktop/test/parent/children
 ```
 
-- If you need spaces into directory name, use "\ "(slash-space)
+If you need spaces into directory name, use "\ "(slash-space)
 ```sh
 # create a directory named "directory with spaces"
 mkdir directory\ with\ spaces
@@ -253,7 +253,7 @@ touch index.thml style.css app.js
 To create a file with spaces on name, use "\ "(slash-space)
 
 ```sh
-# create files file spaces.txt
+# create a file named "file spaces.txt"
 touch file\ spaces.txt
 ```
 
