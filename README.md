@@ -180,6 +180,13 @@ mkdir /Users/darlanmendonca/Desktop/test
 mkdir -p /Users/darlanmendonca/Desktop/test/parent/children
 ```
 
+If you need spaces into directory name, use "\ "(slash-space)
+```sh
+# create a directory named "directory with spaces"
+mkdir directory\ with\ spaces
+```
+
+
 ## RMDIR
 
 Removes an empty directory.
@@ -243,6 +250,13 @@ touch index.html
 touch index.thml style.css app.js
 ```
 
+To create a file with spaces on name, use "\ "(slash-space)
+
+```sh
+# create a file named "file spaces.txt"
+touch file\ spaces.txt
+```
+
 ## CP
 
 Copies a file to another location.
@@ -259,12 +273,21 @@ Can also be used to create a copy of files in the `pwd` if you specify a __file_
 cp a.md b.md
 ```
 
+Copy all directory files to another directory
+
+```sh
+# You're in ~/some_folder
+# Copy all files from ~/some_folder to ~/Documents/another_folder"
+cp * ~/Documents/another_folder
+```
+
 ## MV
 
 Moves or renames a file.
 
 - If another directory is specified, then the file will be moved acording to the argument
 - If the same directory is specified, but another filename, the file will be renamed
+- If you need to rename file to a name with spaces, use "\ "(slash-space)
 
 ```sh
 # Moving file "a.txt" to "/b" directory
@@ -274,6 +297,11 @@ mv a.txt /b/a.txt
 ```sh
 # Renames file "a.txt" to "b.txt"
 mv a.txt b.txt
+```
+
+```sh
+# Renames file "file.txt" to "file with spaces.txt"
+mv file.txt file\ with\ spaces.txt
 ```
 
 ## RM
